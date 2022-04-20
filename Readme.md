@@ -1,4 +1,4 @@
-# Vitesse React ⚛️ :
+# React Vitesse  ⚛️ :
 
 React starter template inspired by [vitesse](https://github.com/antfu/vitesse)
 
@@ -12,7 +12,7 @@ React starter template inspired by [vitesse](https://github.com/antfu/vitesse)
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa) ❌
 - 🎨 [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine ✅
 - ⚓ [Use icons from any icon sets with classes](https://github.com/antfu/unocss/tree/main/packages/preset-icons) ✅
-- [I18n ready](./locales) ❌
+- [I18n ready](./src/locales) ✅
 - 🖨 Static-site generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg) ❌
 - 🦾 TypeScript, of course ✅
 - ☁️ Deploy on Netlify, zero-config ❌
