@@ -116,7 +116,7 @@ export default function About() {
                                         +78
                                     </h1>
                                     <span className='text-xs '>
-                                        New cliens
+                                        New clients
                                     </span>
                                 </div>
                             </div>
