@@ -44,12 +44,21 @@ html,body,#root {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /*background-color: #282c34;*/
-  color: #fff;
+  background-color: rgb(249, 250, 251);
+  color: #77869e;
   height: 100vh;
-
+padding-bottom:48px
 
 }
+
+html body.dark,body.dark #root {
+  background-color: rgb(0 5 37 );
+  color: #fff;
+  padding-bottom:48px
+}
+
+
+
 h1,h2,h3,h4,h5,h6,button {
  margin: 0;
  font-family: "PlusJakartaSans","Changa";
@@ -76,5 +85,11 @@ ol,ul{
     margin-inline-end: 0px;
     padding-inline-start: 0px;
 
+}
+
+centered{
+display: flex;
+justify-content: center;
+align-items: center;
 }
 

@@ -13,7 +13,7 @@ export default function Cards() {
                 </h1>
                 <section className="flex flex-wrap py-4">
                     <div className="w-full px-2">
-                        <Card >
+                        <Card className='max-w-xs'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi dolorum, aliquid omnis eum neque dolor soluta magnam odio laboriosam quidem obcaecati dolore possimus iste?
                         </Card>
                     </div>

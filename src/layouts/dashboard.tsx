@@ -23,7 +23,7 @@ export default function Dashboard(props: {
         {
             title: t('sidebar.components'),
             icon: 'i-carbon-assembly-cluster',
-            path: '/components',
+            path: '/components/buttons',
             children: [
                 {
                     title: 'Buttons',
@@ -74,8 +74,8 @@ export default function Dashboard(props: {
 
     return <div className='h-full'>
 
-        <div className='flex w-full h-screen text-slate-700 dark:text-slate-50 bg-gray-50 dark:bg-primary-900 ' >
-            <aside className={`${sidebarCollapsed ? 'w-16' : 'w-64'} bg-primary-600 transition-width duration-700 h-full z-30 flex-shrink-0 hidden  overflow-y-auto  lg:block`}>
+        <div className='flex w-full text-slate-700 dark:text-slate-50 bg-gray-50 dark:bg-primary-900 ' >
+            <aside className={`${sidebarCollapsed ? 'w-16' : 'w-36 md:w-64'} bg-primary-600 dark:bg-primary-700 transition-width duration-700 top-0 fixed bottom-0 z-30 flex-shrink-0   overflow-y-auto  lg:block`}>
                 <div className='flex flex-col h-full'>
                     <div className='flex items-center justify-center h-16 text-5xl bg-primary-900 '>
                         {/* <img className='w-auto h-16' src={logo} alt='logo' /> */}
@@ -85,18 +85,18 @@ export default function Dashboard(props: {
 
                     </div>
                     <div className='mt-5'>
-                        <nav className='flex-1 mt-5 text-sm font-medium leading-5 '>
+                        <nav className='flex-1 mt-5 text-xs font-medium leading-5 md:text-sm '>
                             <ul className='m-0 ml-0 list-none'>
-                                {sidebarItems.map((item, index) => <li key={item.title} className={` ${currentIndex === index ? 'bg-primary-600' : ''}`}> <a
+                                {sidebarItems.map((item, index) => <li key={item.title} className={` ${currentIndex === index ? 'bg-primary-600' : ''}`}> <Link
 
                                     onClick={() => setCurrentIndex(index === currentIndex ? -1 : index)}
                                     className={`${sidebarCollapsed ? 'justify-center' : ''} ${currentIndex === index ? 'bg-primary-600' : ''}  ${currentIndex === index ? 'bg-primary-700' : ''} sidebar-item block py-4  px-4 flex items-center rtl:space-x-reverse space-x-2 text-white  decoration-none  leading-5  group hover:bg-primary-600  focus:outline-none  transition duration-150 ease-in-out`}
-                                    href='#'
+                                    to={item.path}
                                 >
                                     <span className={`${item.icon} text-lg block`}></span>
                                     {!sidebarCollapsed && <span className='block' >{item.title}</span>}
                                     {!sidebarCollapsed && item.children && <span className='i-carbon-chevron-down' >{item.title}</span>}
-                                </a>
+                                </Link>
                                     {item.children && !sidebarCollapsed && currentIndex === index && <ul className='ml-4 opacity-75'>
                                         {item.children.map((child) => <li> <Link
                                             key={child.title}
@@ -116,8 +116,8 @@ export default function Dashboard(props: {
                         </nav>
                     </div>
                 </div>
-                <div className='absolute bottom-0 left-0 right-0 h-12 p-2 bg-primary-700'>
-                    <div className="flex items-center justify-around w-full h-full space-x-2 text-xl">
+                <div className='absolute bottom-0 left-0 right-0 h-12 p-2 bg-primary-700 dark:bg-primary-800'>
+                    <div className="flex items-center justify-around w-full h-full space-x-2 text-xl text-white">
 
                         <div i="carbon-notification cursor-pointer" />
                         <div i="carbon-chat cursor-pointer" />
@@ -128,12 +128,12 @@ export default function Dashboard(props: {
 
                 </div>
             </aside>
-            <div className='w-full'>
-                <header className="flex items-center justify-between w-full h-16 px-4 shadow-md bg-slate-100 dark:bg-primary-800">
+            <div className={`w-full relative transition-padding duration-700 ${sidebarCollapsed?'pl-16':'pl-36 md:pl-64'}`}>
+                <header className={`${sidebarCollapsed?'pl-20':'pl-40 md:pl-72'} transition-padding duration-700  fixed right-0 z-20 flex flex-col items-center justify-between w-full px-4 py-2 space-y-2 shadow-md  md:py-0 md:space-y-none md:h-16 md:flex-row bg-slate-100 dark:bg-primary-800`}>
                     <div>
                         <button
                             onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
-                            className="text-xl cursor-pointer fill-current  i-carbon-menu text-slate-600 dark:text-white hover:bg-slate-500" />
+                            className="text-xl cursor-pointer fill-current i-carbon-menu text-slate-600 dark:text-white hover:bg-slate-500" />
 
                     </div>
                     <div>
@@ -162,7 +162,7 @@ export default function Dashboard(props: {
                     </div>
 
                 </header>
-                <main className="w-full text-slate-600 dark:text-slate-50 ">
+                <main className="w-full pt-16 text-slate-600 dark:text-slate-50 ">
                     {props.children}
                 </main>
             </div>
