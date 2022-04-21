@@ -17,6 +17,8 @@ React starter template inspired by [vitesse](https://github.com/antfu/vitesse)
 - 🦾 TypeScript, of course ✅
 - ☁️ Deploy on Netlify, zero-config ❌
   
+ ![screenshot](public/img/dark.png)
+
 ## Installation : 
 
      git clone https://github.com/boussadjra/vitesse-react.git
