@@ -157,7 +157,7 @@ export default function About() {
 
                     </div>
 
-                    <div className='flex flex-col w-full space-x-4 space-y-4 md:flex-row charts rtl:space-x-reverse'>
+                    <div className='flex flex-col w-full space-x-4 space-y-4 rtl:pl-1 md:flex-row charts rtl:space-x-reverse'>
 
                         <Card  className='flex items-center w-4/12 first:mt-4 first:ml-4'>
                             <Doughnut {...doughnutOptions} />

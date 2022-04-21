@@ -70,6 +70,7 @@ export default function Dashboard(props: {
 
     function changeLang(lang: string) {
         i18n.changeLanguage(lang)
+        document.body.dir=i18n.dir()
     }
 
     return <div className='h-full'>
@@ -128,8 +129,8 @@ export default function Dashboard(props: {
 
                 </div>
             </aside>
-            <div className={`w-full relative transition-padding duration-700 ${sidebarCollapsed?'pl-16':'pl-36 md:pl-64'}`}>
-                <header className={`${sidebarCollapsed?'pl-20':'pl-40 md:pl-72'} transition-padding duration-700  fixed right-0 z-20 flex flex-col items-center justify-between w-full px-4 py-2 space-y-2 shadow-md  md:py-0 md:space-y-none md:h-16 md:flex-row bg-slate-100 dark:bg-primary-800`}>
+            <div className={`w-full relative transition-padding duration-700 ${sidebarCollapsed?'pl-16 rtl:pl-0 rtl:pr-16':'pl-36 rtl:pl-0 md:rtl:pr-64 md:pl-64'}`}>
+                <header className={`${sidebarCollapsed?'pl-20 rtl:pr-20':'pl-40 rtl:pl-2 rtl:pr-40 md:rtl:pr-72 md:pl-72'} transition-padding duration-700  fixed right-0 z-20 flex flex-col items-center justify-between w-full px-4 py-2 space-y-2 shadow-md  md:py-0 md:space-y-none md:h-16 md:flex-row bg-slate-100 dark:bg-primary-800`}>
                     <div>
                         <button
                             onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
