@@ -15,9 +15,10 @@ React starter template inspired by [vitesse](https://github.com/antfu/vitesse)
 - [I18n ready](./src/locales) ✅
 - 🖨 Static-site generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg) ❌
 - 🦾 TypeScript, of course ✅
-- ☁️ Deploy on Netlify, zero-config ❌
+
   
  ![screenshot](public/img/dark.png)
+ ![screenshot](public/img/light.png)
 
 ## Installation : 
 
