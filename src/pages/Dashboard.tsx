@@ -159,10 +159,10 @@ export default function About() {
 
                     <div className='flex flex-col w-full space-x-4 space-y-4 rtl:pl-1 md:flex-row charts rtl:space-x-reverse'>
 
-                        <Card  className='flex items-center w-4/12 first:mt-4 first:ml-4'>
+                        <Card className='flex items-center md:w-4/12 first:mt-4 first:ml-4'>
                             <Doughnut {...doughnutOptions} />
                         </Card>
-                        <Card className='w-8/12'>
+                        <Card className='md:w-8/12'>
                             <Bar options={options} data={data} />
                         </Card>
                     </div>

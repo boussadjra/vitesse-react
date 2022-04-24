@@ -75,8 +75,8 @@ export default function Dashboard(props: {
 
     return <div className='h-full'>
 
-        <div className='flex w-full text-slate-700 dark:text-slate-50 bg-gray-50 dark:bg-primary-900 ' >
-            <aside className={`${sidebarCollapsed ? 'w-16' : 'w-36 md:w-64'} bg-primary-600 dark:bg-primary-700 transition-width duration-700 top-0 fixed bottom-0 z-30 flex-shrink-0   overflow-y-auto  lg:block`}>
+        <div className='flex flex-col w-full overflow-x-hidden text-slate-700 dark:text-slate-50 bg-gray-50 dark:bg-primary-800' >
+            <aside className={`${sidebarCollapsed ? 'md:w-16' : 'md:w-64'} bg-primary-600 dark:bg-primary-700 transition-width duration-700 w-full top-0 md:fixed bottom-0 z-30 flex-shrink-0   overflow-y-auto  lg:block`}>
                 <div className='flex flex-col h-full'>
                     <div className='flex items-center justify-center h-16 text-5xl bg-primary-900 '>
                         {/* <img className='w-auto h-16' src={logo} alt='logo' /> */}
@@ -129,9 +129,9 @@ export default function Dashboard(props: {
 
                 </div>
             </aside>
-            <div className={`w-full relative transition-padding duration-700 ${sidebarCollapsed?'pl-16 rtl:pl-0 rtl:pr-16':'pl-36 rtl:pl-0 md:rtl:pr-64 md:pl-64'}`}>
-                <header className={`${sidebarCollapsed?'pl-20 rtl:pr-20':'pl-40 rtl:pl-2 rtl:pr-40 md:rtl:pr-72 md:pl-72'} transition-padding duration-700  fixed right-0 z-20 flex flex-col items-center justify-between w-full px-4 py-2 space-y-2 shadow-md  md:py-0 md:space-y-none md:h-16 md:flex-row bg-slate-100 dark:bg-primary-800`}>
-                    <div>
+            <div className={`w-full  relative transition-padding duration-700 pl-0 ${sidebarCollapsed?'md:pl-16 rtl:pl-0 md:rtl:pr-16':'rtl:pl-0 md:rtl:pr-64 md:pl-64'}`}>
+                <header className={`${sidebarCollapsed?'md:pl-20 md:rtl:pr-20':'pl-0 rtl:pl-2 md:rtl:pr-40 md:rtl:pr-72 md:pl-72'} pr-0 pl-2 transition-padding duration-700 w-full md:fixed right-0 z-20 flex flex-col items-center justify-center md:justify-between  px-4 py-2 space-y-2 shadow-md  md:py-0 md:space-y-none md:h-16 md:flex-row bg-slate-100 dark:bg-primary-900`}>
+                    <div className="hidden md:block">
                         <button
                             onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
                             className="text-xl cursor-pointer fill-current i-carbon-menu text-slate-600 dark:text-white hover:bg-slate-500" />
@@ -140,7 +140,7 @@ export default function Dashboard(props: {
                     <div>
                         <div className="relative"><span className="absolute inset-y-0 z-10 flex items-center pl-3 text-xl text-gray-500 i-carbon-search top-1/4 left-3">
                         </span>
-                            <input type="text" placeholder="Type Something" className="w-full min-w-[300px] py-3 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-primary-800 dark:text-gray-300 dark:border-gray-500 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
+                            <input type="text" placeholder="Type Something" className="w-full min-w-[300px] py-3 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-primary-900 dark:text-gray-300 dark:border-gray-500 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
                         </div>
                     </div>
                     <div className='flex items-center space-x-4 rtl:space-x-reverse text-slate-600 dark:text-white'>
