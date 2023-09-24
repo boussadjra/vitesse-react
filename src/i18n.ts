@@ -5,34 +5,29 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 import locale from './locales/index';
 
-
-
-  i18n
+i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     //   lng: 'ar',
-      fallbackLng: 'en',
-      debug: true,
-      resources: {
-            en: {
-                translation: {
-                    ...locale.en
-                }
-            },
-            ar: {
-                translation: {
-                    ...locale.ar
-                }
-            }
+    fallbackLng: 'en',
+    debug: true,
+    resources: {
+      en: {
+        translation: {
+          ...locale.en,
+        },
       },
+      ar: {
+        translation: {
+          ...locale.ar,
+        },
+      },
+    },
 
-
-      interpolation: {
-          escapeValue: false, // not needed for react as it escapes by default
-      }
+    interpolation: {
+      escapeValue: false, // not needed for react as it escapes by default
+    },
   });
-
-
 
 export default i18n;

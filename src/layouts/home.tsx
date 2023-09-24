@@ -1,19 +1,13 @@
-import Footer from "../components/layout/Footer"
-import useDirection from "../hooks/useDirection"
+import Footer from '../components/layout/Footer';
+import useDirection from '../hooks/useDirection';
 
-export default function Home(props: {
-    children: React.ReactNode
-}) {
+export default function Home(props: { children: React.ReactNode }) {
+  const { toggleDirection } = useDirection();
 
-    const { toggleDirection } = useDirection()
-
-
-    return (
-        <div className="">
-            <div>
-            {props.children}
-            </div>
-            <Footer />
-        </div>
-    )
+  return (
+    <div className="">
+      <div>{props.children}</div>
+      <Footer />
+    </div>
+  );
 }

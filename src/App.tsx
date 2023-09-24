@@ -1,23 +1,15 @@
-import React, { Suspense, useState } from 'react'
-import logo from './logo.svg'
+import React, { Suspense, useState } from 'react';
 
-import {  useRoutes } from 'react-router-dom'
-
-import routes from '~react-pages'
+import logo from './logo.svg';
+import routes from '~react-pages';
+import { useRoutes } from 'react-router-dom';
 
 function App() {
-
   return (
-    <div className='w-full m-0 dark:bg-primary-800 root'>
-
-      <Suspense fallback={<p>Loading...</p>}>
-  
-       {useRoutes(routes)}
-     
-      </Suspense>
-
+    <div className="w-full m-0 dark:bg-primary-950 root">
+      <Suspense fallback={<p>Loading...</p>}>{useRoutes(routes)}</Suspense>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
