@@ -5,7 +5,6 @@ import { BarElement, CategoryScale, Chart as ChartJS, Legend, LinearScale, Title
 
 import Card from '../components/core/Card';
 import DashboardLayout from '../layouts/DashboardLayout';
-import { faker } from '@faker-js/faker';
 
 export const options = {
   responsive: true,
@@ -27,12 +26,12 @@ export const data = {
   datasets: [
     {
       label: 'Dataset 1',
-      data: labels.map(() => faker.number.int({ min: 0, max: 1000 })),
+      data: labels.map(() => Math.floor(Math.random() * 100)),
       backgroundColor: '#088b96',
     },
     {
       label: 'Dataset 2',
-      data: labels.map(() => faker.number.int({ min: 0, max: 1000 })),
+      data: labels.map(() => Math.floor(Math.random() * 100)),
       backgroundColor: '#c79507',
     },
   ],

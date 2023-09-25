@@ -1,11 +1,15 @@
 import Button from '../core/Button';
 import i18n from '@/i18n';
 import useDarkMode from '@/hooks/useDarkMode';
+import useDirection from '@/hooks/useDirection';
 
 export default function Footer() {
   const { toggleDark } = useDarkMode();
+  const { toggleDirection } = useDirection();
+
   function changeLang(lang: string) {
     i18n.changeLanguage(lang);
+    toggleDirection();
   }
   return (
     <footer className="flex justify-center w-full pb-4 text-white footer">
