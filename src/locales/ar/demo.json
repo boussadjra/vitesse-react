@@ -1,0 +1,14 @@
+{
+  "demo": {
+    "components": {
+      "btns": {
+        "buttons": "أزرار",
+        "solid": "ممتلئ",
+        "outline": "مخطط",
+        "link": "رابط",
+        "appendIcon": "أيقونة مضافة في الآخر",
+        "prependIcon": "أيقونة مضافة في الأول"
+      }
+    }
+  }
+}

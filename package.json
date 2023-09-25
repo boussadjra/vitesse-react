@@ -10,8 +10,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "prepare": "husky install",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ."
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "-": "^0.0.1",

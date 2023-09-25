@@ -4,7 +4,7 @@ import { Bar, Doughnut } from 'react-chartjs-2';
 import { BarElement, CategoryScale, Chart as ChartJS, Legend, LinearScale, Title, Tooltip } from 'chart.js';
 
 import Card from '../components/core/Card';
-import Dashboard from '../layouts/dashboard';
+import DashboardLayout from '../layouts/DashboardLayout';
 import { faker } from '@faker-js/faker';
 
 export const options = {
@@ -28,28 +28,25 @@ export const data = {
     {
       label: 'Dataset 1',
       data: labels.map(() => faker.number.int({ min: 0, max: 1000 })),
-      backgroundColor: '#59ddaa',
+      backgroundColor: '#088b96',
     },
     {
       label: 'Dataset 2',
       data: labels.map(() => faker.number.int({ min: 0, max: 1000 })),
-      backgroundColor: '#fe3a82',
+      backgroundColor: '#c79507',
     },
   ],
 };
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
-export default function About() {
+
+export default function Dashboard() {
   const doughnutOptions = {
     data: {
       datasets: [
         {
           data: [11, 39, 50],
-          /**
-           * These colors come from Tailwind CSS palette
-           * https://tailwindcss.com/docs/customizing-colors/#default-color-palette
-           */
-          backgroundColor: ['#59ddaa', '#9c64f2', '#fe3a82'],
+          backgroundColor: ['#088b96', '#0081F7', '#c79507'],
           label: 'Dataset 1',
         },
       ],
@@ -65,7 +62,7 @@ export default function About() {
   };
 
   return (
-    <Dashboard>
+    <DashboardLayout>
       <div className="flex items-center justify-center w-full h-full ">
         <section className="w-full p-4 space-y-4 ">
           <div className="flex flex-wrap w-full space-x-4 space-y-4 text-slate-500 dark:text-slate-300 rtl:space-x-reverse ">
@@ -125,6 +122,6 @@ export default function About() {
           </div>
         </section>
       </div>
-    </Dashboard>
+    </DashboardLayout>
   );
 }

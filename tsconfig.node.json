@@ -2,7 +2,12 @@
   "compilerOptions": {
     "composite": true,
     "module": "esnext",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
   },
-  "include": ["vite.config.ts","unocss.config.ts"]
+  "include": [
+    "vite.config.ts",
+    "unocss.config.ts"
+  ]
 }

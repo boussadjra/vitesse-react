@@ -8,12 +8,18 @@ export default function useDarkMode() {
     //save to local storage
     localStorage.setItem('isDark', JSON.stringify(!isDark));
   };
+
   useEffect(() => {
     const isDark = JSON.parse(localStorage.getItem('isDark') || 'false');
     setIsDark(isDark);
   }, []);
+
   useEffect(() => {
-    document.body.classList[isDark ? 'add' : 'remove']('dark');
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
   }, [isDark]);
 
   return { toggleDark };

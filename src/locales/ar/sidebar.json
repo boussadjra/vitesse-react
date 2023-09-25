@@ -1,0 +1,12 @@
+{
+  "sidebar": {
+    "dashboard": "لوحة القيادة",
+    "components": "المكونات",
+    "team": "الفريق",
+    "projects": "المشاريع",
+    "calendar": "التقويم",
+    "reports": "التقارير",
+    "buttons": "أزرار",
+    "cards": "بطاقات"
+  }
+}

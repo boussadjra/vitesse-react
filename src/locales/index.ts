@@ -1,15 +1,23 @@
-import homeEn from './en/home';
-import homeAr from './ar/home';
-import sidebarEn from './en/sidebar';
-import sidebarAr from './ar/sidebar';
+import commonAr from './ar/common.json';
+import commonEn from './en/common.json';
+import demoAr from './ar/demo.json';
+import demoEn from './en/demo.json';
+import homeAr from './ar/home.json';
+import homeEn from './en/home.json';
+import sidebarAr from './ar/sidebar.json';
+import sidebarEn from './en/sidebar.json';
 
 export default {
   en: {
-    home: homeEn,
-    sidebar: sidebarEn,
+    ...homeEn,
+    ...sidebarEn,
+    ...commonEn,
+    ...demoEn,
   },
   ar: {
-    home: homeAr,
-    sidebar: sidebarAr,
+    ...homeAr,
+    ...sidebarAr,
+    ...commonAr,
+    ...demoAr,
   },
 };

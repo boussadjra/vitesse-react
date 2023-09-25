@@ -1,0 +1,14 @@
+{
+  "demo": {
+    "components": {
+      "btns": {
+        "buttons": "Buttons",
+        "solid": "Solid",
+        "outline": "Outline",
+        "link": "Link",
+        "prependIcon": "Prepend Icon",
+        "appendIcon": "Append Icon"
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import i18n from '../i18n';
 
 export default function useDirection() {
@@ -14,11 +15,13 @@ export default function useDirection() {
   }, []);
   useEffect(() => {
     //change html element direction
-    document.body.dir = isRTL ? 'rtl' : 'ltr';
+    document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
   }, [isRTL]);
 
   useEffect(() => {
-    document.body.dir = i18n.dir();
+    document.documentElement.lang = i18n.language;
+    document.documentElement.dir = i18n.dir();
+    document.documentElement.classList.add(i18n.language + '-text');
   }, [i18n.dir()]);
 
   return { toggleDirection };

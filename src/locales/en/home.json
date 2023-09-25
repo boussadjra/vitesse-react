@@ -1,0 +1,24 @@
+{
+  "home": {
+    "hello": "Hello !",
+    "welcome": "Welcome !",
+    "template_desc": "Modern Vite Starter Template for React",
+    "template_sub_desc": "This template is built on top of Vite, React.js and Tailwind CSS",
+    "dashboard": "Dashboard",
+    "github": "Github",
+    "view_github": "View on Github",
+    "dark_mode_desc": "This template is designed also with dark mode support",
+    "features": "Features",
+    "go_home": "Go to home"
+  },
+  "features": {
+    "template_use_dark_mode": "This template has also the dark mode",
+    "fully_written_in_typescript": "Fully written in Typescript & TSX",
+    "file_based_routing": "File based routing",
+    "layout_system": "Layout system",
+    "shared_state_management_with_redux": "Shared state management with Redux",
+    "react_hooks": "React Hooks",
+    "localization_with_react_i18next": "Localisation with React-i18next",
+    "use_icons_from_any_icon_sets": "Use icons from any icon sets with classes & attributes"
+  }
+}

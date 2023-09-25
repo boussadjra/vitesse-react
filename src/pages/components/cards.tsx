@@ -1,9 +1,9 @@
-import Dashboard from '../../layouts/dashboard';
-import Card from '../../components/core/Card';
+import Card from '@/components/core/Card';
+import DashboardLayout from '@/layouts/DashboardLayout';
 
 export default function Cards() {
   return (
-    <Dashboard>
+    <DashboardLayout>
       <div className="flex items-center justify-center w-full h-full">
         <div className="w-full p-4">
           <h1 className="text-3xl font-bold ">Cards :</h1>
@@ -17,6 +17,6 @@ export default function Cards() {
           </section>
         </div>
       </div>
-    </Dashboard>
+    </DashboardLayout>
   );
 }

@@ -1,9 +1,8 @@
-import { useState } from 'react';
-import Home from '../layouts/home';
+import HomeLayout from '../layouts/HomeLayout';
 
 export default function About() {
   return (
-    <Home>
+    <HomeLayout>
       <div className="flex items-center justify-center h-full ">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold text-center">About</h1>
@@ -13,7 +12,7 @@ export default function About() {
               className="text-indigo-300 visited:text-indigo-400"
               href="https://github.com/antfu/vitesse"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
             >
               Vitesse
             </a>
@@ -21,6 +20,6 @@ export default function About() {
           </p>
         </div>
       </div>
-    </Home>
+    </HomeLayout>
   );
 }

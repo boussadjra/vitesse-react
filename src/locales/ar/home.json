@@ -1,0 +1,24 @@
+{
+  "home": {
+    "hello": "السلام عليكم",
+    "welcome": "مرحبا بكم",
+    "template_desc": "قالب حديث مبني بواسطة Vite و React",
+    "template_sub_desc": " هذا القالب مبني على Vite و React.js و Tailwind CSS ",
+    "github": "جيت هاب",
+    "view_github": "مشاهدة على Github",
+    "dark_mode_desc": "هذا القالب مصمم بشكل داكن أيضا",
+    "features": "ميزات",
+    "dashboard": "لوحة القيادة",
+    "go_home": "العودة إلى الصفحة الرئيسية"
+  },
+  "features": {
+    "template_use_dark_mode": "هذا القالب يحتوي أيضًا على الوضع الليلي",
+    "fully_written_in_typescript": "مكتوب بالكامل بلغة TypeScript و TSX",
+    "file_based_routing": "توجيه الصفحات بناءً على الملفات",
+    "layout_system": "نظام التخطيط",
+    "shared_state_management_with_redux": "إدارة الحالة المشتركة باستخدام Redux",
+    "react_hooks": "React Hooks",
+    "localization_with_react_i18next": "الترجمة باستخدام React-i18next",
+    "use_icons_from_any_icon_sets": "استخدام الأيقونات من أي مجموعة رموز بواسطة الفئات "
+  }
+}

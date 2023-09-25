@@ -2,10 +2,8 @@
 import { getIconCollections, iconsPlugin } from '@egoist/tailwindcss-icons';
 
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -21,7 +19,6 @@ export default {
           '800': '#106f7a',
           '900': '#125c67',
           '950': '#053d47',
-
         },
         secondary: {
           '50': '#fdfcdc',
@@ -35,7 +32,6 @@ export default {
           '800': '#835410',
           '900': '#704513',
           '950': '#412407',
-
         },
       },
     },

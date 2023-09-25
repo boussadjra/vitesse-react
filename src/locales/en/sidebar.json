@@ -1,0 +1,12 @@
+{
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "components": "Components",
+    "team": "Team",
+    "projects": "Projects",
+    "calendar": "Calendar",
+    "reports": "Reports",
+    "buttons": "Buttons",
+    "cards": "Cards"
+  }
+}
